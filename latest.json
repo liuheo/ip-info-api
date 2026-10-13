@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-13 18:33:26",
+  "environment": "GitHub Actions / ubuntu-latest",
+  "results": [
+    {
+      "id": "bt-ip-lookup",
+      "status": "available",
+      "success": 5,
+      "samples": 5,
+      "average_ms": 722.78,
+      "errors": []
+    },
+    {
+      "id": "baidu-ip-lookup",
+      "status": "available",
+      "success": 5,
+      "samples": 5,
+      "average_ms": 1002.08,
+      "errors": []
+    },
+    {
+      "id": "qq-ip2city",
+      "status": "available",
+      "success": 5,
+      "samples": 5,
+      "average_ms": 604.82,
+      "errors": []
+    },
+    {
+      "id": "letv-ip",
+      "status": "unavailable",
+      "success": 0,
+      "samples": 5,
+      "average_ms": null,
+      "errors": [
+        "HTTP 403",
+        "HTTP 403",
+        "HTTP 403",
+        "HTTP 403",
+        "HTTP 403"
+      ]
+    },
+    {
+      "id": "ipip-myip",
+      "status": "available",
+      "success": 5,
+      "samples": 5,
+      "average_ms": 330.46,
+      "errors": []
+    }
+  ],
+  "source_ref": "4056a4fc20f7642c17d4427e242ed3edbd63f8dd",
+  "repository": "liuheo/ip-info-api"
+}
