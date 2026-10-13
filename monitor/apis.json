@@ -1,0 +1,57 @@
+{
+  "apis": [
+    {
+      "id": "bt-ip-lookup",
+      "name": "宝塔",
+      "category": "both",
+      "url": "https://t.bt.cn/api/v3/ip-lookup",
+      "method": "POST",
+      "body": {"target": "110.96.1.1"},
+      "expect": {"found": true, "target": "110.96.1.1", "feature": "ip"},
+      "info": "国家 / 省份 / 城市<br>运营商 / 经纬度",
+      "doc": "docs/bt-ip-lookup.md"
+    },
+    {
+      "id": "baidu-ip-lookup",
+      "name": "百度",
+      "category": "target",
+      "url": "https://opendata.baidu.com/api.php?co=&resource_id=6006&oe=utf8&query=110.96.1.1",
+      "method": "GET",
+      "expect": {"status": "0", "data.0.origip": "110.96.1.1", "data.0.resourceid": "6006"},
+      "info": "归属地 / 运营商（组合文本）",
+      "doc": "docs/baidu-ip-lookup.md"
+    },
+    {
+      "id": "qq-ip2city",
+      "name": "腾讯新闻",
+      "category": "local",
+      "url": "https://i.news.qq.com/api/ip2city",
+      "method": "GET",
+      "expect": {"ret": 0},
+      "validate": {"ip": "ip"},
+      "info": "公网 IP / 国家 / 省份 / 城市",
+      "doc": "docs/qq-ip2city.md"
+    },
+    {
+      "id": "letv-ip",
+      "name": "乐视",
+      "category": "local",
+      "url": "https://g3.letv.com/r?format=1",
+      "method": "GET",
+      "validate": {"host": "ip", "remote": "ip", "desc": "nonempty_string"},
+      "info": "公网 IP / 归属地 / 运营商",
+      "doc": "docs/letv-ip.md"
+    },
+    {
+      "id": "ipip-myip",
+      "name": "IPIP",
+      "category": "local",
+      "url": "https://myip.ipip.net/json",
+      "method": "GET",
+      "expect": {"ret": "ok"},
+      "validate": {"data.ip": "ip", "data.location": "string_list"},
+      "info": "公网 IP / 地理信息数组",
+      "doc": "docs/ipip-myip.md"
+    }
+  ]
+}

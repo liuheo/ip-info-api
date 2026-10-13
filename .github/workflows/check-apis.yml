@@ -1,0 +1,38 @@
+name: Check IP APIs
+
+on:
+  schedule:
+    # UTC -> Beijing 00:16, 04:16, 08:16, 12:16, 16:16, 20:16
+    - cron: '16 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ip-api-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test monitor
+        run: python -m unittest discover -s tests -v
+      - name: Probe APIs into isolated report directory
+        run: python scripts/check_apis.py --source-ref "$(git rev-parse HEAD)"
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ip-api-results
+          path: monitor/output/
+          retention-days: 30
+      - name: Publish only to monitor-results branch
+        run: python scripts/publish_results.py
