@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17 12:24:22",
+  "checked_at": "2026-10-17 20:11:21",
   "environment": "GitHub Actions / ubuntu-latest",
   "results": [
     {
@@ -7,7 +7,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 710.68,
+      "average_ms": 973.2,
       "errors": []
     },
     {
@@ -15,7 +15,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 785.01,
+      "average_ms": 1623.52,
       "errors": []
     },
     {
@@ -23,7 +23,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 601.81,
+      "average_ms": 605.97,
       "errors": []
     },
     {
@@ -31,16 +31,18 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 865.3,
+      "average_ms": 993.73,
       "errors": []
     },
     {
       "id": "ipip-myip",
       "status": "unstable",
-      "success": 3,
+      "success": 1,
       "samples": 5,
-      "average_ms": 54.96,
+      "average_ms": 1118.58,
       "errors": [
+        "HTTP 500",
+        "HTTP 500",
         "HTTP 500",
         "HTTP 500"
       ]
