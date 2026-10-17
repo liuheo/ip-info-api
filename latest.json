@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18 02:30:33",
+  "checked_at": "2026-10-18 06:17:51",
   "environment": "GitHub Actions / ubuntu-latest",
   "results": [
     {
@@ -7,7 +7,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 709.19,
+      "average_ms": 1000.59,
       "errors": []
     },
     {
@@ -15,7 +15,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 728.4,
+      "average_ms": 1349.9,
       "errors": []
     },
     {
@@ -23,7 +23,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 703.86,
+      "average_ms": 527.59,
       "errors": []
     },
     {
@@ -31,17 +31,18 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 931.5,
+      "average_ms": 1145.26,
       "errors": []
     },
     {
       "id": "ipip-myip",
       "status": "unstable",
-      "success": 3,
+      "success": 2,
       "samples": 5,
-      "average_ms": 76.16,
+      "average_ms": 1127.94,
       "errors": [
-        "TimeoutError: The read operation timed out",
+        "HTTP 500",
+        "HTTP 500",
         "HTTP 500"
       ]
     }
