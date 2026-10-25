@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-25 21:11:39",
+  "checked_at": "2026-10-26 03:03:13",
   "environment": "GitHub Actions / ubuntu-latest",
   "results": [
     {
@@ -7,7 +7,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 935.59,
+      "average_ms": 706.3,
       "errors": []
     },
     {
@@ -15,7 +15,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 819.22,
+      "average_ms": 1637.39,
       "errors": []
     },
     {
@@ -23,23 +23,29 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 461.36,
+      "average_ms": 441.48,
       "errors": []
     },
     {
       "id": "letv-ip",
-      "status": "available",
-      "success": 5,
+      "status": "unavailable",
+      "success": 0,
       "samples": 5,
-      "average_ms": 949.47,
-      "errors": []
+      "average_ms": null,
+      "errors": [
+        "HTTP 403",
+        "HTTP 403",
+        "HTTP 403",
+        "HTTP 403",
+        "HTTP 403"
+      ]
     },
     {
       "id": "ipip-myip",
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 101.64,
+      "average_ms": 100.46,
       "errors": []
     }
   ],
