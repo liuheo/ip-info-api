@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-08 23:11:54",
+  "checked_at": "2026-11-09 04:29:05",
   "environment": "GitHub Actions / ubuntu-latest",
   "results": [
     {
@@ -7,25 +7,23 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 753.97,
+      "average_ms": 897.73,
       "errors": []
     },
     {
       "id": "baidu-ip-lookup",
-      "status": "unstable",
-      "success": 4,
+      "status": "available",
+      "success": 5,
       "samples": 5,
-      "average_ms": 1792.59,
-      "errors": [
-        "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>"
-      ]
+      "average_ms": 2877.68,
+      "errors": []
     },
     {
       "id": "qq-ip2city",
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 498.74,
+      "average_ms": 435.39,
       "errors": []
     },
     {
@@ -33,7 +31,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 684.69,
+      "average_ms": 965.09,
       "errors": []
     },
     {
@@ -41,7 +39,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 63.41,
+      "average_ms": 100.62,
       "errors": []
     }
   ],
