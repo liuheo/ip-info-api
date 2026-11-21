@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21 20:37:41",
+  "checked_at": "2026-11-22 05:39:20",
   "environment": "GitHub Actions / ubuntu-latest",
   "results": [
     {
@@ -7,7 +7,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 733.82,
+      "average_ms": 674.69,
       "errors": []
     },
     {
@@ -15,7 +15,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 796.5,
+      "average_ms": 705.18,
       "errors": []
     },
     {
@@ -23,7 +23,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 491.12,
+      "average_ms": 508.48,
       "errors": []
     },
     {
@@ -31,7 +31,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 847.09,
+      "average_ms": 769.31,
       "errors": []
     },
     {
@@ -39,7 +39,7 @@
       "status": "available",
       "success": 5,
       "samples": 5,
-      "average_ms": 94.25,
+      "average_ms": 54.07,
       "errors": []
     }
   ],
